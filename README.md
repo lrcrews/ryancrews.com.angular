@@ -1,10 +1,10 @@
-# ryancrews.com - an angular blog (that's not just about angular)
+# ryancrews.com - an angular blog 
+## (that's not just about angular)
+
+[![CircleCI](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/master.svg?style=svg)](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/master) (`master` branch status)
+[![CircleCI](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/release.svg?style=svg)](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/release) (`release` branch status)
 
 This is the code for my blog, [ryancrews.com](www.ryancrews.com).
-
-circleCI `master` branch status: [![CircleCI](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/master.svg?style=svg)](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/master)
-
-circleCI `release` branch status: [![CircleCI](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/release.svg?style=svg)](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/release)
 
 It's meant to be useful as an example of various patterns in an angular/typescript app, so some things may seem like overkill out of context, but at least they'll be pretty!
 
