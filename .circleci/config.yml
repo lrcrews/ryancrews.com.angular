@@ -36,6 +36,9 @@ jobs:
         
       # run tests!
       - run: npm run circleci-test
+
+      # run lint!
+      - run: npm run lint
 deployment:
   prod:
     branch: release
