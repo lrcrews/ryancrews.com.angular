@@ -1,12 +1,13 @@
 # ryancrews.com - an angular blog 
-## (that's not just about angular)
+### (that's not just about angular)
 
 [![CircleCI](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/master.svg?style=svg)](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/master) (`master` branch status)
+
 [![CircleCI](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/release.svg?style=svg)](https://circleci.com/gh/lrcrews/ryancrews.com.angular/tree/release) (`release` branch status)
 
-This is the code for my blog, [ryancrews.com](www.ryancrews.com).
+This is the code for my blog, [ryancrews.com](http://www.ryancrews.com).
 
-It's meant to be useful as an example of various patterns in an angular/typescript app, so some things may seem like overkill out of context, but at least they'll be pretty!
+It's meant to be a useful example of various patterns in an angular/typescript app, so some things may seem like overkill out of context, but at least they'll be pretty!
 
 I do enjoy clean code.  You may notice that as you look through various files.  I believe the most important part of an app's codebase is the ability for any developer to:
 
