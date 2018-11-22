@@ -1,0 +1,114 @@
+@import "../../assets//stylesheets//mixins/mixins.scss";
+
+section.ad-tile-component {
+
+  > footer {
+    background-color: $grey-1;
+    padding: 40px 20px;
+
+    > div {
+      background-color: #ffffff;
+      color: #426282;
+      text-align: center;
+    }
+
+    &.regular-view-ad {
+      width: 116px;
+
+      @media (max-width: $small-view) {
+        display: none;
+      }
+
+      > div {
+        height: 430px;
+        width: 116px;
+
+        > div {
+          padding-top: 160px;
+        }
+      }
+    }
+
+    &.small-view-ad {
+      display: none;
+      width: calc(100% - 40px);
+
+      @media (max-width: $small-view) {
+        display: block;
+      }
+
+      @media (max-width: 707px) { // add size plus 40px padding, minor break point to accomidate ad until screen is smaller than ad width
+        padding: 40px 0;
+        width: 100%;
+      }
+
+      @media (max-width: $smaller-view) {
+        display: none;
+      }
+
+      > div {
+        height: 86px;
+        margin: 0 auto;
+        width: 667px;
+
+        > div {
+          padding-top: 30px;
+        }
+      }
+    }
+
+    &.smaller-view-ad {
+      display: none;
+      padding: 40px 12px;
+      width: calc(100% - 24px);
+
+      @media (max-width: $smaller-view) {
+        display: block;
+      }
+
+      @media (max-width: $smallest-view) {
+        display: none;
+      }
+
+      @media (max-width: 379px) { // add size plus 24px padding, minor break point to accomidate ad until screen is smaller than ad width
+        padding: 40px 0;
+        width: 100%;
+      }
+
+      > div {
+        height: 296px;
+        margin: 0 auto;
+        width: 355px;
+
+        > div {
+          padding-top: 126px;
+        }
+      }
+    }
+
+    &.smallest-view-ad {
+      display: none;
+      padding: 40px 12px;
+      width: calc(100% - 24px);
+
+      @media (max-width: $smallest-view) {
+        display: block;
+      }
+
+      @media (max-width: 252px) { // add size plus 24px padding, minor break point to accomidate ad until screen is smaller than ad width
+        padding: 40px 0;
+        width: 100%;
+      }
+
+      > div {
+        height: 192px;
+        margin: 0 auto;
+        width: 228px;
+
+        > div {
+          padding-top: 86px;
+        }
+      }
+    }
+  }
+}

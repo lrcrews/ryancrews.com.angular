@@ -1,18 +1,33 @@
-import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
+import { RyanCrewsRoutingModule } from "./app-routing.module";
 
-import { AppComponent } from "./app.component";
+import { AdTileComponent } from "./ad-tile/ad-tile.component";
+import { AppComponent } from "./app-component/app.component";
+import { DisclosurePageComponent } from "./disclosure-page/disclosure-page.component";
+import { HomePageComponent } from "./home-page/home-page.component";
+import { SiteFooterComponent } from "./site-footer/site-footer.component";
+import { SiteHeaderComponent } from "./site-header/site-header.component";
 
 
 @NgModule({
-  declarations: [
+  bootstrap: [
     AppComponent
   ],
+  declarations: [
+    AdTileComponent,
+    AppComponent,
+    DisclosurePageComponent,
+    HomePageComponent,
+    SiteFooterComponent,
+    SiteHeaderComponent
+  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RyanCrewsRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
+
 export class AppModule { }

@@ -1,0 +1,16 @@
+$huge: 40px;
+$large: 24px;
+$normal: 16px;
+$small: 14px;
+
+@mixin accent-font {
+  font-family: 'Roboto Slab', serif;
+}
+
+@mixin main-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin code-font {
+  font-family: 'Share Tech Mono', monospace;
+}

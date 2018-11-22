@@ -1,0 +1,33 @@
+@import "../../assets//stylesheets//mixins/mixins.scss";
+
+section.site-header-component {
+  margin-bottom: 40px;
+
+  > header,
+  > footer {
+    @include main-font;
+
+    color: $grey-3;
+    display: inline-block;
+    font-size: $normal;
+    line-height: 24px;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  > header {
+
+    > span {
+      cursor: pointer;
+
+      &:hover {
+        color: darken($grey-3, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  > footer {
+    text-align: right;
+  }
+}
