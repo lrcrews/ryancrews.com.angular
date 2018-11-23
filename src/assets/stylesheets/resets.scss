@@ -7,16 +7,20 @@ input,
 select,
 textarea {
   @include main-font;
-  color: $grey-4;
+  color: $grey-9;
   font-size: $normal;
   font-weight: 400;
   line-height: 24px;
 }
 
+body {
+  background-color: $grey-1;
+}
+
 h1,
 h2 {
   @include accent-font;
-  color: $grey-3;
+  color: $grey-8;
   margin: 0;
   padding: 0;
 }

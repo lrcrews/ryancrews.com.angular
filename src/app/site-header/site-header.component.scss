@@ -1,13 +1,14 @@
 @import "../../assets//stylesheets//mixins/mixins.scss";
 
 section.site-header-component {
+  border-bottom: 2px solid $blue-7;
   margin-bottom: 40px;
 
   > header,
   > footer {
     @include main-font;
 
-    color: $grey-3;
+    color: $grey-9;
     display: inline-block;
     font-size: $normal;
     line-height: 24px;
@@ -20,8 +21,13 @@ section.site-header-component {
     > span {
       cursor: pointer;
 
+      -moz-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      -webkit-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+
       &:hover {
-        color: darken($grey-3, 10%);
+        color: $grey-10;
         text-decoration: underline;
       }
     }

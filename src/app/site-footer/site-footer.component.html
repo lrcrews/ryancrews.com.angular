@@ -1,53 +1,66 @@
 <section class="site-footer-component">
 
-  <header>
-  
-    <ul>
-      <li>
-        <ul>
-          <li>
-            <i class="fas fa-sitemap"></i> site stuff
-          </li>
-          <li>
-            about
-          </li>
-          <li>
+  <ul>
+    <!-- Site links -->
+    <li>
+      <ul>
+        <li>
+          <i class="fas fa-sitemap"></i> site stuff
+        </li>
+        <li>
+          about
+        </li>
+        <li>
+          <span tabindex="0" (click)="navigateToDisclosure()" (keyup.enter)="navigateToDisclosure()">
             disclosure
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ul>
-          <li>
-            <i class="fab fa-github"></i> projects
-          </li>
-          <li>
+          </span>
+        </li>
+      </ul>
+    </li>
+    <!-- Github links -->
+    <li>
+      <ul>
+        <li>
+          <i class="fab fa-github"></i> projects
+        </li>
+        <li>
+          <a href="https://github.com/lrcrews/ryancrews.com.angular" target="_blank">
             ryancrews.com
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ul>
-          <li>
-            <i class="fas fa-address-card"></i> me, elsewhere
-          </li>
-          <li>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Social links -->
+    <li>
+      <ul>
+        <li>
+          <i class="fas fa-address-card"></i> me, elsewhere
+        </li>
+        <li>
+          <a href="https://github.com/lrcrews" target="_blank">
             github
-          </li>
-          <li>
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/users/686871/ryan-crews" target="_blank">
             stackoverflow
-          </li>
-          <li>
+          </a>
+        </li>
+        <li>
+          <a href="www.linkedin.com/in/lryancrews" target="_blank">
             linkedin
-          </li>
-        </ul>
-      </li>
-    </ul>
-
-  </header>
-
-  <footer>
-    <i class="far fa-copyright"></i> {{ currentYear }} Leonard Ryan Crews
-  </footer>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Copyright -->
+    <li>
+      <ul>
+        <li>
+          <i class="far fa-copyright"></i> {{ currentYear }} Leonard Ryan Crews
+        </li>
+      </ul>
+    </li>
+  </ul>
 
 </section>
