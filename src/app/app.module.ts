@@ -7,6 +7,7 @@ import { AdTileComponent } from "./ad-tile/ad-tile.component";
 import { AppComponent } from "./app-component/app.component";
 import { DisclosurePageComponent } from "./disclosure-page/disclosure-page.component";
 import { HomePageComponent } from "./home-page/home-page.component";
+import { QuotedContentComponent } from "./quoted-content/quoted-content.component";
 import { SiteFooterComponent } from "./site-footer/site-footer.component";
 import { SiteHeaderComponent } from "./site-header/site-header.component";
 
@@ -20,6 +21,7 @@ import { SiteHeaderComponent } from "./site-header/site-header.component";
     AppComponent,
     DisclosurePageComponent,
     HomePageComponent,
+    QuotedContentComponent,
     SiteFooterComponent,
     SiteHeaderComponent
   ],

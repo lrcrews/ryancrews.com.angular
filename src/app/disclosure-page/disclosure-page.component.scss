@@ -23,6 +23,10 @@ section#disclosure-page-component {
     @media (max-width: $small-view) {
       width: 100%;
     }
+
+    > img {
+      margin-top: 20px;
+    }
   }
 
   > section {

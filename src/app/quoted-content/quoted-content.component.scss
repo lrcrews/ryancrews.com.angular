@@ -1,0 +1,9 @@
+@import "../../assets//stylesheets//mixins/mixins.scss";
+
+section.quoted-content-component {
+  border-left: 2px solid $blue-5;
+  font-size: $normal;
+  line-height: 24px;
+  margin: 40px 80px 40px 0;
+  padding-left: 60px;
+}
