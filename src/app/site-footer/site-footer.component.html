@@ -1,4 +1,4 @@
-<section class="site-footer-component">
+<footer class="site-footer-component">
 
   <ul>
     <!-- Site links -->
@@ -8,7 +8,9 @@
           <i class="fas fa-sitemap"></i> site stuff
         </li>
         <li>
-          about
+          <span tabindex="0" (click)="navigateToAbout()" (keyup.enter)="navigateToAbout()">
+            about
+          </span>
         </li>
         <li>
           <span tabindex="0" (click)="navigateToDisclosure()" (keyup.enter)="navigateToDisclosure()">
@@ -63,4 +65,4 @@
     </li>
   </ul>
 
-</section>
+</footer>

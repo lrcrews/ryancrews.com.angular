@@ -31,9 +31,20 @@ describe("SiteFooterComponent", () => {
     expect(component).toBeTruthy();
   }));
 
+  describe("navigateToAbout", () => {
+
+    it("should navigate to the about page", () => {
+      const router = TestBed.get(Router);
+      spyOn(router, "navigateByUrl");
+      component.navigateToAbout();
+      expect(router.navigateByUrl).toHaveBeenCalledWith("/about");
+    });
+
+  });
+
   describe("navigateToDisclosure", () => {
 
-    it("should navigate to the home page", () => {
+    it("should navigate to the disclosure page", () => {
       const router = TestBed.get(Router);
       spyOn(router, "navigateByUrl");
       component.navigateToDisclosure();

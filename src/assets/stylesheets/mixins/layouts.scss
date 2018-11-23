@@ -1,0 +1,49 @@
+// The layout of pages that aren't "doing something special"...
+// ... you know ... a standard page.
+@mixin standard-page-layout {
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+
+  > main,
+  > section {
+    display: inline-block;
+    vertical-align: top;
+
+    @media (max-width: $small-view) {
+      display: block;
+    }
+  }
+
+  > main {
+    padding-right: 60px;
+    width: calc(100% - 216px);
+
+    @media (max-width: $small-view) {
+      width: 100%;
+    }
+
+    > img {
+      margin-top: 20px;
+    }
+  }
+
+  > section {
+
+    &.desktop-ad {
+
+      @media (max-width: $small-view) {
+        display: none;
+      }
+    }
+
+    &.mobile-ad {
+      display: none;
+
+      @media (max-width: $small-view) {
+        display: block;
+      }
+    }
+  }
+}

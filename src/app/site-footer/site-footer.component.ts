@@ -12,6 +12,10 @@ export class SiteFooterComponent {
 
   constructor(private _router: Router) {}
 
+  navigateToAbout(): void {
+    this._router.navigateByUrl("/about");
+  }
+
   navigateToDisclosure(): void {
     this._router.navigateByUrl("/disclosure");
   }

@@ -1,6 +1,6 @@
 @import "../../assets//stylesheets//mixins/mixins.scss";
 
-section.site-footer-component {
+footer.site-footer-component {
   border-top: 2px solid $blue-7;
   margin-top: 80px;
 
@@ -30,7 +30,7 @@ section.site-footer-component {
 
           > span,
           > a {
-            color: $blue-4;
+            color: $blue-5;
             cursor: pointer;
             text-decoration: none;
 
@@ -46,7 +46,7 @@ section.site-footer-component {
 
             &:active,
             &:visited {
-              color: $blue-4;
+              color: $blue-5;
 
               &:hover {
                 color: $blue-6;
