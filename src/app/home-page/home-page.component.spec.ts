@@ -57,6 +57,17 @@ describe("HomePageComponent", () => {
 
   });
 
+  describe("navigateToNumbersPost", () => {
+
+    it("should call Router's navigateByUrl with the path to the Numbers post", () => {
+      const router = TestBed.get(Router);
+      spyOn(router, "navigateByUrl");
+      component.navigateToNumbersPost();
+      expect(router.navigateByUrl).toHaveBeenCalledWith("/the-one-about-numbers");
+    });
+
+  });
+
   describe("navigateToUccPost", () => {
 
     it("should call Router's navigateByUrl with the path to the UCC post", () => {

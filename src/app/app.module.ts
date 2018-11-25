@@ -14,6 +14,7 @@ import { StandardPageComponent } from "./standard-page/standard-page.component";
 import { AboutPageComponent } from "./about-page/about-page.component";
 import { DisclosurePageComponent } from "./disclosure-page/disclosure-page.component";
 import { HomePageComponent } from "./home-page/home-page.component";
+import { NumbersPostComponent } from "./posts/numbers/numbers-post.component";
 import { UccPostComponent } from "./posts/ucc/ucc-post.component";
 
 @NgModule({
@@ -31,6 +32,7 @@ import { UccPostComponent } from "./posts/ucc/ucc-post.component";
     AboutPageComponent,
     DisclosurePageComponent,
     HomePageComponent,
+    NumbersPostComponent,
     UccPostComponent
   ],
   imports: [

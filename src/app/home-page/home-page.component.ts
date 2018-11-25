@@ -18,6 +18,10 @@ export class HomePageComponent {
     this._navigateToPage("/disclosure");
   }
 
+  navigateToNumbersPost(): void {
+    this._navigateToPage("/the-one-about-numbers");
+  }
+
   navigateToUccPost(): void {
     this._navigateToPage("/the-one-about-ucc");
   }

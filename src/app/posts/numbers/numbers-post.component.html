@@ -1,0 +1,114 @@
+<section id="numbers-post-component">
+  <app-standard-page>
+    <h1>
+      Why Doesn't Six Fear Seven In Base Eight?
+    </h1>
+
+    <h2>
+      Because Seven Ten Eleven.
+    </h2>
+
+    <h3>
+      Let's talk about numbers, hooray!
+    </h3>
+
+    <p>
+      We're all happy in our day to day lives using base ten, it's nice. We don't even think of it as "base ten" (...or "decimal"), they're just numbers, nothing special.
+    </p>
+
+    <p>
+      But what if those numbers were kind of special, and what if we all actually understood that joke up there without even realizing it? We'd be like Rob Schneider in Surf Ninjas with the awesome 'what if' power! ...What if we lose this power?
+    </p>
+
+    <h3>
+      Intrigued eh? Great, let's do some math! No wait, don't leave!
+    </h3>
+
+    <p>
+      I promise it's just the easy stuff, no letters or Greek characters are involved. Multiplication and addition will take us to this punchline. But first, let us start with a number we know the value of, one hundred and twenty three, 123, one two three. How does 1|2|3 get it's value?
+    </p>
+
+    <p>
+      Well, in base 10 it's due to the following math:
+    </p>
+
+    <app-quoted-content [terminalInput]="true">
+      <ul>
+        <li>
+          value = 3 * 10<sup>0</sup> + 2 * 10<sup>1</sup> + 1 * 10<sup>2</sup>
+        </li>
+        <li>
+          value = 3 * 1 + 2 * 10 + 1 * 100
+        </li>
+        <li>
+          value = 3 + 20 + 100
+        </li>
+        <li>
+          value = 123
+        </li>
+      </ul>
+    </app-quoted-content>
+
+    <p>
+      You see each digit in a number (in any base) is itself times the base (<span class="code-callout">10</span> in this case) raised to the power of the position. The position goes from the right of the number to the left, and begins counting at 0. This is why we reversed the number up there and you see that <span class="code-callout">3</span> is multiplied by the base value <span class="code-callout">10</span> raised to its position <span class="code-callout">0</span>, and the left most number <span class="code-callout">1</span> is multiplied by the base value <span class="code-callout">10</span> raised to its position <span class="code-callout">2</span> (a.k.a. ten squared, a.k.a. ten times ten, a.k.a. rin-ten-ten the super number).
+    </p>
+
+    <p>
+      Awesomeness, we now know the math to get the value of a number in base ten... which isn't amazingly useful since we could just, you know, read the number. Let's do that same math then, but this time let's do it in base eight:
+    </p>
+
+    <app-quoted-content [terminalInput]="true">
+      <ul>
+        <li>
+          value = 3 * 8<sup>0</sup> + 2 * 8<sup>1</sup> + 1 * 8<sup>2</sup>
+        </li>
+        <li>
+          value = 3 * 1 + 2 * 8 + 1 * 64
+        </li>
+        <li>
+          value = 3 + 16 + 64
+        </li>
+        <li>
+          value = 83
+        </li>
+      </ul>
+    </app-quoted-content>
+
+    <h3>
+      It's a different value, hooray!
+    </h3>
+
+    <p>
+      And, after these two examples, we notice a couple of things that we learned oh so long ago.
+    </p>
+
+    <p>
+      First, <b>any number raised to the power of <span class="code-callout">0</span> is <span class="code-callout">1</span></b>, giving us the <span class="code-callout">3 * 1</span> in both cases above.
+    </p>
+
+    <p>
+      Second, <b>any number raised to the power of <span class="code-callout">1</span> is itself</b>, so we ended up with <span class="code-callout">2 * 10</span> in base 10 and <span class="code-callout">2 * 8</span> in base 8.
+    </p>
+
+    <p>
+      Alright, I know what you're thinking. You're thinking, "The 50th anniversary X-Men story <i>Battle of the Atom</i> was rather mundane", and you're not wrong, but it doesn't really doesn’t apply to this discussion. Perhaps you were also thinking, “Hey, let’s do it in binary!”. I like the spirit, and in the right context that could be a very sexy phrase, however I fear I must point out that we can’t do it in binary.
+    </p>
+
+    <p>
+      Binary, or base two, may only have a <span class="code-callout">0</span> or a <span class="code-callout">1</span> in any given digit. That makes our example number of 123 invalid. <b>This is the last thing to remember about numbers though!</b> Every digit of any number may only have values from <span class="code-callout">0</span> to the <span class="code-callout">base - 1</span>. So, the base 10 numbers we all know and love only have the values <span class="code-callout">0</span> to <span class="code-callout">9</span>, binary <span class="code-callout">0</span> to <span class="code-callout">1</span>, and the popular CSS color codes are hexadecimal, or base 16, and have values from <span class="code-callout">0</span> to <span class="code-callout">F</span> for any given digit (where <span class="code-callout">F</span> is 15). Which leaves us with base 8, where you can only count to seven before you have to increment the digit to the left and reset.
+    </p>
+
+    <h3>
+      So, in base 10, six is afraid of seven because seven eight nine. But, in base 8, six has no fear of seven because seven ten eleven.
+    </h3>
+
+    <p>
+      This type of thing shows up in technical interviews from time to time as <span class="code-callout">arrays</span> are wonderfully useful structures to calculate any number's value in any base system. You can <a href="https://github.com/lrcrews/objectively-c-and-learn-things/blob/master/fun_stuff/fun_stuff/BaseNumberStuffViewController.m#L76" target="_blank">check out some Objective-C code</a> showing this on github.
+    </p>
+
+    <img src="https://66.media.tumblr.com/8509a1c5ced5888d3eaa943dd73166d1/tumblr_pbiot4tplc1ro8ysbo1_500.gif"
+         alt="What if Surf Ninjas was best movie Rob Schneider ever did?!?!"
+         title="What if Surf Ninjas was best movie Rob Schneider ever did?!?!" />
+  </app-standard-page>
+</section>
+  
