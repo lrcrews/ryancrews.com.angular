@@ -37,12 +37,12 @@ section.ad-tile-component {
         display: block;
       }
 
-      @media (max-width: 707px) { // add size plus 40px padding, minor break point to accomidate ad until screen is smaller than ad width
+      @media (max-width: 770px) {
         padding: 40px 0;
         width: 100%;
       }
 
-      @media (max-width: $smaller-view) {
+      @media (max-width: 725px) {
         display: none;
       }
 
@@ -62,15 +62,15 @@ section.ad-tile-component {
       padding: 40px 12px;
       width: calc(100% - 24px);
 
-      @media (max-width: $smaller-view) {
+      @media (max-width: 725px) {
         display: block;
       }
 
-      @media (max-width: $smallest-view) {
+      @media (max-width: 410px) {
         display: none;
       }
 
-      @media (max-width: 379px) { // add size plus 24px padding, minor break point to accomidate ad until screen is smaller than ad width
+      @media (max-width: 430px) {
         padding: 40px 0;
         width: 100%;
       }
@@ -91,11 +91,11 @@ section.ad-tile-component {
       padding: 40px 12px;
       width: calc(100% - 24px);
 
-      @media (max-width: $smallest-view) {
+      @media (max-width: 410px) {
         display: block;
       }
 
-      @media (max-width: 252px) { // add size plus 24px padding, minor break point to accomidate ad until screen is smaller than ad width
+      @media (max-width: 310px) {
         padding: 40px 0;
         width: 100%;
       }
