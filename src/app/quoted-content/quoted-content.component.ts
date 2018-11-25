@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "app-quoted-content",
@@ -7,5 +7,7 @@ import { Component } from "@angular/core";
 })
 
 export class QuotedContentComponent {
+
+  @Input() terminalInput = false;
 
 }

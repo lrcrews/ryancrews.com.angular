@@ -6,4 +6,12 @@ section.quoted-content-component {
   line-height: 24px;
   margin: 40px 80px 40px 0;
   padding-left: 60px;
+
+  &.terminal-input {
+    @include code-font;
+
+    background-color: $grey-10;
+    border-left: 2px solid $grey-10;
+    color: $grey-4;
+  }
 }

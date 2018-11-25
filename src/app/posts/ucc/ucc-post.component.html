@@ -1,0 +1,111 @@
+<section id="ucc-post-component">
+  <app-standard-page>
+    <h1>
+      Unit of Complete Code
+    </h1>
+
+    <h2>
+      Using git and UCC to keep a tidy commit history
+    </h2>
+
+    <h3>
+      It all about good commits
+    </h3>
+
+    <p>
+      UCC. It’s a ‘Unit of Completed Code’. A philosophy I follow at work and on my own projects. Only commit something that is completed. Don’t be the one that aggravates your QA team by delivering something that obviously has bugs. And don’t say, “It doesn’t have bugs, it’s just not finished yet!”, because the correct response to that is, “Well why the fuck did you push it then?”. The only (debatably) legitimate reason I’ve heard for pushing incomplete code is from developers who don’t want their local environment to fall behind, so they feel the need to push and pull all day long.
+    </p>
+
+    <h3>
+      I offer to you a solution to that particular problem. Local branching and the wonderful squash command.
+    </h3>
+
+    <p>
+      First, create your local branch by typing the following (Git) command on master:
+    </p>
+
+    <app-quoted-content [terminalInput]="true">
+      <p>
+        $ git checkout -b my_new_feature
+      </p>
+    </app-quoted-content>
+
+    <p>
+      This is just telling git to create a branch named “my_new_feature” (that’s the -b and my_new_feature parts) and immediately switch to it (the checkout part).
+    </p>
+
+    <p>
+      Then, on this local branch, code away, code however you want, commit whenever you want, with whatever message you want. And, when you feel that itch to get the latest code type the following on my_new_feature:
+    </p>
+
+    <app-quoted-content [terminalInput]="true">
+      <ul>
+        <li>
+          $ git fetch
+        </li>
+        <li>
+          $ git merge origin/master
+        </li>
+      </ul>
+    </app-quoted-content>
+
+    <p>
+      We’re just asking for all the tags for all the commits others have done on any branch with the ‘fetch’ command. Then we’re telling git to merge into our local branch any new stuff from master with the ‘merge origin/master’ command.
+    </p>
+
+    <p>
+      Finally, when you’re done with your UCC, do the step above one more time and test your code one more time, then switch back to master and commit your changes as one single commit:
+    </p>
+
+    <app-quoted-content [terminalInput]="true">
+      <ul>
+        <li>
+          $ git checkout master
+        </li>
+        <li>
+          $ git pull origin master
+        </li>
+        <li>
+          $ git merge --squash my_new_feature
+        </li>
+        <li>
+          $ git commit -a -m “Bask in the glory of my new feature!”
+        </li>
+        <li>
+          $ git push origin master
+        </li>
+      </ul>
+    </app-quoted-content>
+
+    <p>
+      That’s a lot of commands, so let’s go over what we’re doing here:
+    </p>
+
+    <ul class="disc">
+      <li>
+        Switching to the "master" branch
+      </li>
+      <li>
+        Making sure that branch is up to date
+      </li>
+      <li>
+        Taking all our code from our local branch and adding it to our "master" branch without retaining any of our local commit messages
+      </li>
+      <li>
+        Creating a single commit for all our new code with a meaningful message
+      </li>
+      <li>
+        Pusing our awesomeness to the world (or at the very least, to our QA team)
+      </li>
+    </ul>
+
+    <h3>
+      Look at us, UCC'ing like champs
+    </h3>
+
+    <img src="http://www.reactiongifs.com/wp-content/uploads/2012/06/swanson-dance.gif"
+          alt="The appropriate level of dancing when you push your awesome code. The penguin dance is also acceptable."
+          title="The appropriate level of dancing when you push your awesome code. The penguin dance is also acceptable." />
+  </app-standard-page>
+</section>
+  

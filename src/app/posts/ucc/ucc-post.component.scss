@@ -1,0 +1,14 @@
+@import "../../../assets//stylesheets//mixins/mixins.scss";
+
+section#ucc-post-component {
+  // add any non-standard page styles here.
+
+  ul.disc {
+    margin-bottom: 20px;
+  }
+
+  img {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+}

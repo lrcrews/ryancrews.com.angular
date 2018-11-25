@@ -1,11 +1,12 @@
 <section id="home-page-component">
-
-  <app-site-header></app-site-header>
-
-  <main>
-    Foo Bar
-  </main>
-
-  <app-site-footer></app-site-footer>
-
+  <app-standard-page>
+    <h1>
+      posts
+    </h1>
+    <ul>
+      <li (click)="navigateToUccPost()">
+        The one about UCC
+      </li>
+    </ul>
+  </app-standard-page> 
 </section>

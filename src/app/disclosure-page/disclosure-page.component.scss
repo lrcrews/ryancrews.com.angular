@@ -1,5 +1,10 @@
 @import "../../assets//stylesheets//mixins/mixins.scss";
 
 section#disclosure-page-component {
-  @include standard-page-layout;
+  // add any non-standard page styles here.
+
+  img {
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }

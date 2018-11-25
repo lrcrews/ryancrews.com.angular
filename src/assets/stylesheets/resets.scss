@@ -18,7 +18,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   @include accent-font;
   color: $grey-8;
   margin: 0;
@@ -34,6 +35,13 @@ h1 {
 h2 {
   font-size: $large;
   line-height: 32px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  color: $blue-6;
+  font-size: $normal;
+  line-height: 24px;
   margin-bottom: 16px;
 }
 
