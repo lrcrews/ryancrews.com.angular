@@ -21,6 +21,7 @@ section#standard-page-component {
     width: calc(100% - 216px);
 
     @media (max-width: $small-view) {
+      margin-top: 20px;
       padding-right: 0;
       width: 100%;
     }

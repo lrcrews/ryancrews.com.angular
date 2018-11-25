@@ -62,3 +62,9 @@ ul {
     margin-left: 16px;
   }
 }
+
+span.code-callout {
+  @include accent-font;
+  background-color: $grey-4;
+  padding: 0 2px;
+}

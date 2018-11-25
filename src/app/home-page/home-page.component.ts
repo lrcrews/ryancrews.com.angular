@@ -11,7 +11,7 @@ export class HomePageComponent {
   constructor(private _router: Router) { }
 
   navigateToUccPost(): void {
-    this._navigateToPage("/umbrella-clad-cocktails-is-not-what-ucc-stands-for");
+    this._navigateToPage("/the-one-about-ucc");
   }
 
   private _navigateToPage(path: string): void {

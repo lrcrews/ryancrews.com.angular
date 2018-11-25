@@ -41,7 +41,7 @@ describe("HomePageComponent", () => {
       const router = TestBed.get(Router);
       spyOn(router, "navigateByUrl");
       component.navigateToUccPost();
-      expect(router.navigateByUrl).toHaveBeenCalledWith("/umbrella-clad-cocktails-is-not-what-ucc-stands-for");
+      expect(router.navigateByUrl).toHaveBeenCalledWith("/the-one-about-ucc");
     });
 
   });

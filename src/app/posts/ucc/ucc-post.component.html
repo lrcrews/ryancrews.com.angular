@@ -13,15 +13,19 @@
     </h3>
 
     <p>
-      UCC. It’s a ‘Unit of Completed Code’. A philosophy I follow at work and on my own projects. Only commit something that is completed. Don’t be the one that aggravates your QA team by delivering something that obviously has bugs. And don’t say, “It doesn’t have bugs, it’s just not finished yet!”, because the correct response to that is, “Well why the fuck did you push it then?”. The only (debatably) legitimate reason I’ve heard for pushing incomplete code is from developers who don’t want their local environment to fall behind, so they feel the need to push and pull all day long.
+      UCC is a philosophy I follow at work and on my own projects. In short, we: <b>only commit something that is completed</b>.
+    </p>
+
+    <p>
+      We don't want to be the one that aggravates our QA team by delivering code that obviously has bugs. We should never say, “It doesn’t have bugs, it’s just not finished yet!”, because the correct response to that is, “Well why the fuck did you push it then?”. The only (debatably) legitimate reason I’ve heard for pushing incomplete code is from developers who don’t want their local environment to fall behind, so they feel the need to push and pull all day long.
     </p>
 
     <h3>
-      I offer to you a solution to that particular problem. Local branching and the wonderful squash command.
+      I offer a solution to that particular problem. Local branching and the wonderful <span class="code-callout">squash</span> command.
     </h3>
 
     <p>
-      First, create your local branch by typing the following (Git) command on master:
+      First, let's create our local branch by typing the following (Git) command on master:
     </p>
 
     <app-quoted-content [terminalInput]="true">
@@ -31,11 +35,11 @@
     </app-quoted-content>
 
     <p>
-      This is just telling git to create a branch named “my_new_feature” (that’s the -b and my_new_feature parts) and immediately switch to it (the checkout part).
+      This is just telling git to create a branch named “my_new_feature” (that’s the <span class="code-callout">-b</span> and <span class="code-callout">my_new_feature</span> parts) and immediately switch to it (the <span class="code-callout">checkout</span> part).
     </p>
 
     <p>
-      Then, on this local branch, code away, code however you want, commit whenever you want, with whatever message you want. And, when you feel that itch to get the latest code type the following on my_new_feature:
+      Then, on this local branch, we code away, we code however we want, we commit whenever we want, with whatever message(s) we want. And, when we feel that itch to get the latest code we type the following command on <span class="code-callout">my_new_feature</span>:
     </p>
 
     <app-quoted-content [terminalInput]="true">
@@ -50,11 +54,11 @@
     </app-quoted-content>
 
     <p>
-      We’re just asking for all the tags for all the commits others have done on any branch with the ‘fetch’ command. Then we’re telling git to merge into our local branch any new stuff from master with the ‘merge origin/master’ command.
+      We’re just asking for all the tags for all the commits others have done on any branch with the <span class="code-callout">fetch</span> command. Then we’re telling git to merge into our local branch any new stuff from master with the <span class="code-callout">merge origin/master</span> command.
     </p>
 
     <p>
-      Finally, when you’re done with your UCC, do the step above one more time and test your code one more time, then switch back to master and commit your changes as one single commit:
+      Finally, when we’re done with our UCC, we do the step above one more time and test our code one more time, then switch back to master and commit our changes as <b>one single commit</b>:
     </p>
 
     <app-quoted-content [terminalInput]="true">
@@ -83,13 +87,13 @@
 
     <ul class="disc">
       <li>
-        Switching to the "master" branch
+        Switching to the <span class="code-callout">master</span> branch
       </li>
       <li>
         Making sure that branch is up to date
       </li>
       <li>
-        Taking all our code from our local branch and adding it to our "master" branch without retaining any of our local commit messages
+        Taking all our code from our local branch and adding it to our <span class="code-callout">master</span> branch without retaining any of our local commit messages
       </li>
       <li>
         Creating a single commit for all our new code with a meaningful message

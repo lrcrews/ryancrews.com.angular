@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: "about", component: AboutPageComponent },
   { path: "disclosure", component: DisclosurePageComponent },
   // Psot pages
-  { path: "umbrella-clad-cocktails-is-not-what-ucc-stands-for", component: UccPostComponent }
+  { path: "the-one-about-ucc", component: UccPostComponent }
 ];
 
 @NgModule({
