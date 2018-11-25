@@ -35,6 +35,28 @@ describe("HomePageComponent", () => {
     expect(component).toBeTruthy();
   }));
 
+  describe("navigateToAbout", () => {
+
+    it("should navigate to the about page", () => {
+      const router = TestBed.get(Router);
+      spyOn(router, "navigateByUrl");
+      component.navigateToAbout();
+      expect(router.navigateByUrl).toHaveBeenCalledWith("/about");
+    });
+
+  });
+
+  describe("navigateToDisclosure", () => {
+
+    it("should navigate to the disclosure page", () => {
+      const router = TestBed.get(Router);
+      spyOn(router, "navigateByUrl");
+      component.navigateToDisclosure();
+      expect(router.navigateByUrl).toHaveBeenCalledWith("/disclosure");
+    });
+
+  });
+
   describe("navigateToUccPost", () => {
 
     it("should call Router's navigateByUrl with the path to the UCC post", () => {

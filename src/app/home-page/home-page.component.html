@@ -1,11 +1,25 @@
 <section id="home-page-component">
   <app-standard-page>
     <h1>
-      posts
+      just another tech blog
     </h1>
+    <h3>
+      Welcome!
+    </h3>
+    <p>
+      On this particular tech blog you'll find posts about general technical concepts, posts about actual technical implementations (typically in <a href="https://angular.io" target="_blank">Angular</a>), and posts about what coding is like.
+    </p>
+    <p>
+      You'll also find gifs at the end of each post, and even at the end of the <span class="link" tabindex="0" (click)="navigateToAbout()" (keyup.enter)="navigateToAbout()">about</span> and <span class="link" tabindex="0" (click)="navigateToDisclosure()" (keyup.enter)="navigateToDisclosure()">disclosure</span> pages! (Hooray?)
+    </p>
+    <h3>
+      posts:
+    </h3>
     <ul>
-      <li (click)="navigateToUccPost()">
-        The one about UCC
+      <li>
+        <span class="link" (click)="navigateToUccPost()" (keyup.enter)="navigateToUccPost()">
+          The one about UCC
+        </span>
       </li>
     </ul>
   </app-standard-page> 

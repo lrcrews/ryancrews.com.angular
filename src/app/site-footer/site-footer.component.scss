@@ -27,32 +27,6 @@ footer.site-footer-component {
             font-size: $normal;
             margin-right: 8px;
           }
-
-          > span,
-          > a {
-            color: $blue-5;
-            cursor: pointer;
-            text-decoration: none;
-
-            -moz-transition: all 0.2s ease-in-out;
-            -o-transition: all 0.2s ease-in-out;
-            -webkit-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-
-            &:hover {
-              color: $blue-6;
-              text-decoration: underline;
-            }
-
-            &:active,
-            &:visited {
-              color: $blue-5;
-
-              &:hover {
-                color: $blue-6;
-              }
-            }
-          }
         }
       }
     }

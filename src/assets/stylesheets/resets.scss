@@ -68,3 +68,29 @@ span.code-callout {
   background-color: $grey-4;
   padding: 0 2px;
 }
+
+a,
+span.link {
+  color: $blue-5;
+  cursor: pointer;
+  text-decoration: none;
+
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $blue-6;
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:visited {
+    color: $blue-5;
+
+    &:hover {
+      color: $blue-6;
+    }
+  }
+}

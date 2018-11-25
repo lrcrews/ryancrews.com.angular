@@ -10,6 +10,14 @@ export class HomePageComponent {
 
   constructor(private _router: Router) { }
 
+  navigateToAbout(): void {
+    this._navigateToPage("/about");
+  }
+
+  navigateToDisclosure(): void {
+    this._navigateToPage("/disclosure");
+  }
+
   navigateToUccPost(): void {
     this._navigateToPage("/the-one-about-ucc");
   }
