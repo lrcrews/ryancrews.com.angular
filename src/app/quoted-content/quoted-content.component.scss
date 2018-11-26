@@ -9,6 +9,7 @@ section.quoted-content-component {
 
   @media (max-width: $small-view) {
     font-size: $small;
+    padding: 0 32px;
   }
 
   &.terminal-input {
