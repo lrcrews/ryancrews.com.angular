@@ -7,7 +7,7 @@ input,
 select,
 textarea {
   @include main-font;
-  color: $grey-9;
+  color: $grey-10;
   font-size: $normal;
   font-weight: 400;
   line-height: 24px;
@@ -21,13 +21,14 @@ h1,
 h2,
 h3 {
   @include accent-font;
-  color: $grey-8;
+  color: $grey-9;
   margin: 0;
   padding: 0;
 }
 
 h1 {
   font-size: $huge;
+  font-style: oblique;
   line-height: 56px;
   margin-bottom: 24px;
 }

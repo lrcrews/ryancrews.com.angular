@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: "about", component: AboutPageComponent },
   { path: "disclosure", component: DisclosurePageComponent },
   // "The one about..." pages
-  { path: "the-one-about-numbers", component: NumbersPostComponent },
+  { path: "the-one-about-the-math-of-numbers", component: NumbersPostComponent },
   { path: "the-one-about-ucc", component: UccPostComponent }
 ];
 

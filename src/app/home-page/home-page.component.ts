@@ -19,7 +19,7 @@ export class HomePageComponent {
   }
 
   navigateToNumbersPost(): void {
-    this._navigateToPage("/the-one-about-numbers");
+    this._navigateToPage("/the-one-about-the-math-of-numbers");
   }
 
   navigateToUccPost(): void {

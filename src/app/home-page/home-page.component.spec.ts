@@ -63,7 +63,7 @@ describe("HomePageComponent", () => {
       const router = TestBed.get(Router);
       spyOn(router, "navigateByUrl");
       component.navigateToNumbersPost();
-      expect(router.navigateByUrl).toHaveBeenCalledWith("/the-one-about-numbers");
+      expect(router.navigateByUrl).toHaveBeenCalledWith("/the-one-about-the-math-of-numbers");
     });
 
   });
